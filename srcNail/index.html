@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selfie nail club</title>
-    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel='stylesheet' href='css/style.min.css'>
+    <link rel='stylesheet' href='css/animate.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id='main' class="header">
-        <div class="header__ul">
+        <ul class="header__ul">
             <li><a href='#main'>Главная</a></li>
             <li><a href='#price'>Цены</a></li>
             <li><a href='#works'>Фото</a></li>
             <li><a href='#cupon'>Акции и скидки</a></li>
             <li><a href='#plus'>Преймущества</a></li>
             <li><a href='#map'>Месторасположение</a></li>
-        </div>
+        </ul>
         <ul class="header__menu">
             <div class="container1">
                 <li><a href='#main'>Главная</a></li>
@@ -210,6 +210,37 @@
                     <li>Снятие(не нашего салона/без повторного наращивания)</li>
                     <li>50 грн</li>
                 </div>
+                <div class="price__subheader">Перманентный макияж</div>
+                <div class="price__block1">
+                    <li>Пудровые брови</li>
+                    <li>900 грн</li>
+                </div>
+                <div class="price__block2">
+                    <li>Акварельные губки</li>
+                    <li>900 грн</li>
+                </div>
+                <div class="price__block1">
+                    <li>Межресничка</li>
+                    <li>800 грн</li>
+                </div>
+                <div class="price__subheader">Брови</div>
+                <div class="price__block1">
+                    <li>Коррекция и окрашивание бровей краской</li>
+                    <li>200 грн</li>
+                </div>
+                <div class="price__block2">
+                    <li>Коррекция и окрашивание карандашом</li>
+                    <li>100/130 грн</li>
+                </div>
+                <div class="price__block1">
+                    <li>Коррекция (воск/пинцет) - тонкие/густые брови</li>
+                    <li>50/80 грн</li>
+                </div>
+                <div class="price__block2">
+                    <li>Изменение/приданием формы</li>
+                    <li>+50 грн</li>
+                </div>
+
             </ul>
             <a class="price__button" href="https://dikidi.online/159499">Записаться</a>
         </div>
@@ -219,18 +250,31 @@
         <div class="container">
             <div class="works__header">Фото</div>
             <div class="works__wrapperFirst">
-                <img src='icons/icon1.HEIC'>
-                <img src='icons/icon2.HEIC'>
-                <img src='icons/icon3.HEIC'>
-                <img src='icons/icon4.HEIC'>
+                <img src='icons/icon1.HEIC' alt='photo'>
+                <img src='icons/icon2.HEIC' alt='photo'>
+                <img src='icons/icon3.HEIC' alt='photo'>
+                <img src='icons/icon4.HEIC' alt='photo'>
             </div>
             <div class="works__wrapperFirst">
-                <img src='icons/eye1.JPEG'>
-                <img src='icons/eye2.PNG'>
-                <img src='icons/eye3.JPEG'>
-                <img src='icons/icon8.PNG'>
+                <img src='icons/eye1.JPEG' alt='photo'>
+                <img src='icons/eye2.PNG' alt='photo'>
+                <img src='icons/eye3.JPEG' alt='photo'>
+                <img src='icons/icon8.PNG' alt='photo'>
             </div>
-            <a href="https://www.instagram.com/selfie_nail_club/" class="works__link">Открыть ещё фото</a>
+            <div class="works__wrapperFirst">
+                <img class="showMore" src='icons/newPhoto/IMG_1859.PNG' alt='photo'>
+                <img class="showMore" src='icons/newPhoto/IMG_1860.PNG' alt='photo'>
+                <img class="showMore" src='icons/newPhoto/IMG_1861.PNG' alt='photo'>
+                <img class="showMore" src='icons/newPhoto/IMG_1862.PNG' alt='photo'>
+            </div>
+            <div class="works__wrapperFirst">
+                <img class="showMore" src='icons/newPhoto/IMG_1863.PNG' alt='photo'>
+                <img class="showMore" src='icons/newPhoto/IMG_2883.PNG' alt='photo'>
+                <img class="showMore" src='icons/newPhoto/IMG_2884.PNG' alt='photo'>
+                <img class="showMore" src='icons/newPhoto/IMG_1862.PNG' alt='photo'>
+            </div>
+<!--            href="https://www.instagram.com/selfie_nail_club/"-->
+            <a class="works__link">Открыть ещё фото</a>
             <a href="https://dikidi.online/159499" class="works__button">Хочу!</a>
         </div>
     </div>
@@ -240,12 +284,12 @@
             <div id='cupon' class="cupon__header">Акции и скидки</div>
             <div class="cupon__wrapper1">
                 <div class="cupon__imgWithTest">
-                    <img class='cupon__img' src='icons/img1.JPEG'>
+                    <img class='cupon__img' src='icons/img1.JPEG' alt='photo'>
                     <div class="cupon__subImg">Скидка студентам 10% на все услуги салона.
                         Для получения скидки требуется предьявить студенческий билет.</div>
                 </div>
                 <div class="cupon__imgWithTest">
-                    <img class='cupon__img' src='icons/img2.JPEG'>
+                    <img class='cupon__img' src='icons/img2.JPEG' alt='photo'>
                     <div class="cupon__subImg">🎁СКИДКА ДЛЯ ИМЕНИННИКОВ🎁
                         🎉
                         В Ваш День Рождения <a href='https://www.instagram.com/selfie_nail_club/'>@selfie_nail_club</a>
@@ -253,21 +297,9 @@
                         Скидка действует 3 дня ДО и 3 дня ПОСЛЕ, всё что вам нужно - предоставить паспорт или любой
                         другой документ, который подтверждает ваши данные📇</div>
                 </div>
-            </div>
-            <img class='cupon__img1' src='icons/img3.jpg'>
-            <div class="cupon__subImg1">WOW 🤩
-                .
-                Девочки, давно хотели сделать наращивание, а цены кусались? Или не могли найти хорошего мастера?
-                .
-                Тогда эта акция именно для вас😃
-                .
-                Дарим 50% скидку на наращивание ногтей гелем. В стоимость входит покрытие гель лак👌.
-                Сделаем для вас качественное наращивание не травмируя ваш ноготок😊
-                .
-                Для подробной информации пишите или звоните нам.
-                С радостью будем видеть вас в <a
-                    href='https://www.instagram.com/selfie_nail_club/'>@selfie_nail_club</a>❤️</div>
-            <div class="cupon__timerHead">Осталось до конца акции:</div>
+            </div>️
+        </div>
+            <div class="cupon__timerHead">Осталось до конца акций:</div>
             <div class="cupon__timer">
                 <div class="cupon__block">
                     <span id='days'>10</span> дней
@@ -289,7 +321,7 @@
         <div class="container">
             <div class="plus__header">Чем наш салон<br> отличается от других?</div>
             <div class="plus__wrapper">
-                <div class="plus__block">
+                <div class="plus__block animate__fadeInUp animate__animated">
                     <div class="plus__number">1</div>
                     <div class="plus__descr">Стерилизация</div>
                     <div class="plus__subdescr">Инструменты проходят 3 этапа стерилизации:<br> 1. Ультразвуковая чистка
@@ -325,8 +357,9 @@
             <div class="map__tel">+380736117677</div>
             <div class="map__descr">Мы работаем С 9:00 до<br> 20:00, БЕЗ ВЫХОДНЫХ</div>
             <div class="map__social">
-                <a href="https://www.instagram.com/selfie_nail_club/"><img src='icons/instagram.svg'></a>
-                <a href=”viber://chat?number=%2B380736117677″> <img src='icons/viber.svg'></a>
+                <a href="https://www.instagram.com/selfie_nail_club/"><img alt='instagram'
+                        src='icons/instagram.svg'></a>
+                <a href=”viber://chat?number=%2B380736117677″> <img alt='viber' src='icons/viber.svg'></a>
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.7687743282327!2d36.33363651568192!3d50.0156889794177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709de28f53837%3A0x76de53c5b2b0ce1a!2sSelfie%20nail%20club!5e0!3m2!1sru!2sua!4v1603679372736!5m2!1sru!2sua"
@@ -334,10 +367,7 @@
                 tabindex="0"></iframe>
         </div>
     </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src='js/script.js'></script>
 </body>
 
