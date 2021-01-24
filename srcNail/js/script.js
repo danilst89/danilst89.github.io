@@ -92,8 +92,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const trigger = document.querySelector('.works__link');
     const beforeLink = document.querySelector('.works__button');
 
-    trigger.style.marginTop = '-75px';
-
     showMore.forEach(item => {
         item.style.display = 'none';
     });
@@ -106,7 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
         link.setAttribute('href', 'https://www.instagram.com/selfie_nail_club/');
         link.classList.add('works__link');
         link.textContent = 'Посмотреть больше в Instagram!';
-        link.style.marginTop = '25px';
+        link.style.marginTop = '75px';
         beforeLink.insertAdjacentElement('beforebegin', link);
         for(let i = 0; i < 8; i++) {
             showMore[i].style.display = 'block';
