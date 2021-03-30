@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mainPage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+#mainPage h1 {
+    text-align: center;
+    color: #fff;
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    margin-top: 10%;
+}
+
+#mainPage h2 {
+    color: #fff;
+    margin-top: 20px;
+    animation-name: show;
+    animation-duration: 1.5s;
+    white-space: nowrap;
+}
+
+#mainPage input {
+    margin-top: 20px;
+    border-radius: 2px;
+    width: 250px;
+    height: 40px;
+}
+
+#mainPage input:invalid {
+    border: 2px solid red;
+}
+
+#mainPage button {
+    display: block;
+    background-color: #fff;
+    margin: 30px auto 0 auto;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 2px;
+    transition: .2s all;
+    animation-name: show;
+    animation-duration: 1.5s;
+}
+
+#mainPage button:hover {
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    cursor: pointer;
+}
+
+#root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+#root h2 {
+    color: #fff;
+}
+
+#root #main .payments {
+    font-size: 70px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#root #main .add {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#root #main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    animation-name: marginTop;
+    animation-duration: 1.5s;
+}
+
+#root #main .budgetCounter{
+    margin-top: 10px;
+    color: #fff;
+}
+
+#root #main .expenseCounter {
+    margin-top: 10px;
+    color: #fff;
+}
+
+#root .modalBudget {
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root .modalBalance {
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root .modalExpenses {
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divForModalBudget {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+    animation-name: show;
+    animation-duration: 1s;
+    padding: 10px;
+}
+
+.closeModalScroll {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+
+.closeModalExpense {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+
+#root .divForModalBudget h1 {
+    color: #000;
+    margin-top: 15px;
+}
+
+#root .divForModalBudget h2 {
+    color: #000;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#root .divForModalBudget .smallTextBalance {
+    font-size: 11px;
+}
+
+#root .divForModalBudget button {
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 2px;
+    transition: .2s all;
+    animation-name: show;
+    animation-duration: 1.5s;
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+}
+
+#root .divForModalBudget button:hover {
+    cursor: pointer;
+    background-color: rgb(195, 195, 195);
+    color: #000;
+}
+
+#root .divForModalBudget input {
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+}
+
+#root .budgetList {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#root .expenseList {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.width {
+    width: 100%;
+}
+
+#root .budgetList li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+#root #main #expenseMargin {
+    margin-top: 20px;
+}
+
+#root .expenseList li {
+    border-right: 2px solid #fff; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.closeModal {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+
+.savingMoney {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.addScroll {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.addExpenses {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#root .hideModal {
+    opacity: 0;
+    animation-name: hide;
+    animation-duration: 1s;
+}
+
+.showModal {
+    display: flex;
+}
+
+#root .divForModalBudget .addRangeButton {
+    display: block;
+    margin: 100px auto 0 auto;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 2px;
+    transition: .2s all;
+    animation-name: show;
+    animation-duration: 1.5s;
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+}
+
+#root .divForModalBudget .balanceHeader {
+    margin-bottom: 60px;
+}
+
+#root .divForModalBudget .addRangeButton:hover {
+    cursor: pointer;
+    background-color: rgb(195, 195, 195);
+    color: #000;
+}
+
+@keyframes slideUp {
+    from {
+        margin-top: 20%;
+    }
+
+    to {
+        margin-top: 10%;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes marginTop {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 120px;
+    }
+}
