@@ -157,7 +157,7 @@ html {
     border-radius: 4px;
     color: #fff;
     font-weight: 700;
-    margin-right: 19px;
+    margin-right: 37px;
     white-space: nowrap;
 }
 
@@ -171,8 +171,16 @@ html {
     font-size: 16px;
     text-decoration: underline;
     color: #02897a;
-    padding-left: 35px;
     white-space: nowrap;
+    display: flex;
+}
+
+.main__watch-video p {
+    color: #02897a;
+}
+
+.main__watch-video-icon {
+    margin-right: 9px;
 }
 
 .main__watch-wrapper {
@@ -186,16 +194,6 @@ html {
 
 .main__watch-video:hover {
     opacity: 0.8;
-}
-
-.main__watch-video::before {
-    content: '';
-    background: url(/img/Triangle\ Copy\ 6watch_icon.svg);
-    width: 17px;
-    height: 18px;
-    top: 1px;
-    left: 9px;
-    position: absolute;
 }
 
 /* FOR-YOU */
@@ -1064,6 +1062,11 @@ html {
     .for-you__li:nth-child(1),
     .for-you__li:nth-child(2) {
         margin-bottom: 15px;
+    }
+
+    .header {
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+        padding-bottom: 20px;
     }
 }
 
