@@ -585,7 +585,8 @@ header__link-item {
     background: #ededf0;
     border-radius: 8px;
     text-align: center;
-    padding: 33px 57px;
+    padding: 33px 0;
+    min-width: 360px;
 }
 
 .sub-main__text {
