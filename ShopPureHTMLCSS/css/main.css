@@ -922,7 +922,6 @@ a:visited {
     align-items: center;
     cursor: pointer;
     margin-bottom: 18px;
-    margin-left: 7px;
 }
 
 .all-categories__open:hover {
@@ -1566,4 +1565,8 @@ a:visited {
 
 .affilate__wrapper:last-of-type {
     border-left: 0;
+}
+
+.all-categories-margin {
+    margin-left: 7px;
 }
