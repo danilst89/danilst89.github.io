@@ -800,7 +800,6 @@ a:visited {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.0275em;
-    margin: 0 120px;
     color: #1f1f1f;
 }
 
@@ -1557,4 +1556,14 @@ a:visited {
 
 .item-height {
     height: 73%;
+}
+
+.affilate__wrapper {
+    padding: 17px 120px;
+    border-left: 1px #d1d1e1 solid;
+    border-right: 1px #d1d1e1 solid;
+}
+
+.affilate__wrapper:last-of-type {
+    border-left: 0;
 }
