@@ -8,11 +8,28 @@ html {
     margin-right: calc(-1 * (100vw - 100%));
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+select {
+    outline: none;
+}
+
 body {
     background-color: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+input {
+    outline: none;
+    border: 0;
 }
 
 select {
@@ -25,7 +42,7 @@ a:visited {
 * {
     transition: 0.2s all;
     font-family: Inter, sans-serif;
-    list-style: none;
+
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -105,7 +122,7 @@ a:visited {
     font-weight: 400;
 }
 
-header__link-item {
+.header__link-item:visited {
     color: #5a5b6a;
 }
 
@@ -122,8 +139,11 @@ header__link-item {
 .header__link {
     color: #2264d1;
     font-size: 20px;
-
     font-weight: 400;
+}
+
+.header__link:visited {
+    color: #2264d1;
 }
 
 .header__link_wrapper {
@@ -140,9 +160,20 @@ header__link-item {
     border-radius: 4px;
     border: 1px solid #9dc2ff;
     font-size: 20px;
-    font-family: Quicksand, sans-serif;
     margin-right: 21px;
     white-space: nowrap;
+    color: #2264d1;
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+}
+
+.header__sign-span {
+    font-weight: 700;
+    font-family: Quicksand, sans-serif;
+}
+
+.header__sign:visited {
+    color: #2264d1;
 }
 
 .header__sign:hover {
@@ -205,7 +236,9 @@ header__link-item {
     opacity: 0.7;
 }
 
-.categories__item:hover > .categories__item__img > svg {
+.categories__item:hover
+    > .categories__item__img
+    > .categories__item__img__item {
     fill: #2979ff;
 }
 
@@ -221,7 +254,7 @@ header__link-item {
     border-radius: 8px;
     max-width: 1114px;
     position: relative;
-    padding: 16px;
+    padding: 16px 16px 0 16px;
 }
 
 .main__header {
@@ -240,6 +273,7 @@ header__link-item {
     background-position: right 0.7em top 50%, 0 0;
     background-size: 0.65em auto, 100%;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .main__select_wrapper {
@@ -395,6 +429,7 @@ header__link-item {
     width: 259px;
     margin-top: 6px;
     margin-bottom: 16px;
+    height: 472px;
 }
 
 .carts__item-img {
@@ -407,15 +442,18 @@ header__link-item {
 }
 
 .carts__item__text {
+    display: inline-block;
     font-size: 16px;
-
     font-weight: 400;
     margin: 0;
-    margin-bottom: 24px;
+    height: 18%;
+}
+
+.carts__text-wrapper {
 }
 
 .carts__item_wrapper {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     display: inline-block;
 }
 
@@ -423,20 +461,15 @@ header__link-item {
     font-size: 24px;
     font-weight: 700;
     margin: 0;
+    height: 11%;
 }
 
 .carts__item__subtext {
     font-weight: 400;
-
     color: #787885;
     margin: 0;
     font-size: 14px;
-    margin-bottom: 14px;
-}
-
-.carts__item__subtext__margin {
-    margin-top: 22px;
-    margin-bottom: 17px;
+    height: 10%;
 }
 
 .stars {
@@ -470,6 +503,10 @@ header__link-item {
     background-color: #fff;
     border: 1px solid #9dc2ff;
     border-radius: 4px;
+}
+
+.watch__button:visited {
+    color: #2264d1;
 }
 
 .watch__wrapper:hover {
@@ -515,6 +552,7 @@ header__link-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 11%;
 }
 
 .carts__item__subtext__marginSecond {
@@ -530,8 +568,8 @@ header__link-item {
     margin-bottom: 58px;
 }
 
-.carts__subtext-margin-third {
-    margin-bottom: 8px;
+.carts__item-padding {
+    padding-top: 21px;
 }
 
 .carts__item__subtext__width {
@@ -552,7 +590,7 @@ header__link-item {
     margin-bottom: 10px;
 }
 
-.carts__item__priceAndCool {
+.carts__item__price-and-cool {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -582,11 +620,13 @@ header__link-item {
 }
 
 .sub-main__cart {
+    box-sizing: border-box;
     background: #ededf0;
     border-radius: 8px;
     text-align: center;
     padding: 33px 0;
     min-width: 360px;
+    max-height: 155px;
 }
 
 .sub-main__text {
@@ -651,40 +691,14 @@ header__link-item {
     letter-spacing: 0.0275em;
 }
 
-.footer__about__item:last-of-type {
-    margin-right: 0;
-}
-
-.footer__about__item a:hover {
-    opacity: 0.7;
-}
-
-.footer__about__item:first-child {
-    margin-left: 0;
-}
-
-.footer__about__item__last {
-    margin-left: auto;
-}
-
 .footer__customer-list {
     display: flex;
 }
 
-.allContactsFlex {
+.all-contactsFlex {
     display: flex;
     align-items: center;
     margin-bottom: 17px;
-}
-
-.numbersAndEmailFirst {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.numbersAndEmailFirst a:hover {
-    opacity: 0.7;
 }
 
 .numberAndEmailSecond {
@@ -707,26 +721,7 @@ header__link-item {
     letter-spacing: 0.0275em;
     color: #1f1f1f;
 }
-
-.subnumberAndSubemail {
-    display: flex;
-    align-items: center;
-    height: 12px;
-}
-
-.subnumberFirst {
-    font-size: 12px;
-    color: #5a5b6a;
-    margin: 0;
-    margin-right: 38px;
-}
-
-.subemailFirst {
-    font-size: 12px;
-    color: #5a5b6a;
-}
-
-.allContacts__track {
+.all-contacts__track {
     width: 166px;
     height: 42px;
     font-family: Roboto;
@@ -741,28 +736,18 @@ header__link-item {
     align-items: center;
 }
 
-.allContacts__track:hover {
+.all-contacts__track:hover {
     opacity: 0.7;
 }
 
-.secondAllContactsFlex {
-    display: flex;
-    align-items: flex-start;
-}
-
-.socialMedia {
+.social-media {
     margin-left: 24px;
     margin-right: 20px;
     display: inline-block;
 }
 
-.socialMedia:hover {
+.social-media:hover {
     opacity: 0.7;
-}
-
-.subemailSecond {
-    font-size: 12px;
-    color: #5a5b6a;
 }
 
 .width__email {
@@ -773,11 +758,15 @@ header__link-item {
 }
 
 .width__email-wrapper {
+    margin: 0 auto;
+}
+
+.width__email-container {
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.emailInput {
+.email-input {
     border: 0;
     height: 24px;
     border-left: 1px solid #5a5b6a;
@@ -825,7 +814,7 @@ header__link-item {
 .subfooter {
     display: flex;
     align-items: center;
-    padding: 10px 0 15px 592px;
+    padding: 10px 0 10px 592px;
 }
 
 .subfooter__ul {
@@ -848,7 +837,7 @@ header__link-item {
     margin-right: 0;
 }
 
-.subfooter__li a {
+.subfooter__about-page {
     color: #5a5b6a;
 }
 
@@ -859,7 +848,7 @@ header__link-item {
 
 .main-filters__wrapper {
     display: flex;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 42px auto;
     justify-content: space-between;
 }
 
@@ -1152,6 +1141,7 @@ header__link-item {
     padding-left: 19px;
     cursor: pointer;
     width: 100%;
+    font-weight: 400;
 }
 
 .filter_color {
@@ -1265,8 +1255,7 @@ header__link-item {
 
 .filters-flex__header {
     font-size: 16px;
-    margin: 0;
-    padding: 0;
+    font-weight: 500;
 }
 
 .select-third-header {
@@ -1315,7 +1304,7 @@ header__link-item {
     align-items: center;
 }
 
-.ThirdAllContactsFlex {
+.Thirdall-contactsFlex {
     padding-right: 18px;
 }
 
@@ -1331,14 +1320,15 @@ header__link-item {
 
 .categories__item_active .categories__item__text {
     color: #2979ff;
+    font-weight: 500;
 }
 
-.categories__item_active .socialMedia__opacity:hover {
+.categories__item_active .social-media__opacity:hover {
     opacity: 0.7;
 }
 
-.header__ul li a:hover {
-    color: #000;
+.header__link-item:hover {
+    opacity: 0.7;
 }
 
 .categories__item__img {
@@ -1368,22 +1358,17 @@ header__link-item {
     margin-bottom: 0;
 }
 
-.firstAllContactsFlex {
+.firstall-contactsFlex {
     margin-right: 38px;
 }
 
-.secondAllContactsFlex {
+.secondall-contactsFlex {
     margin-right: 85px;
 }
 
 .width__email__affilate:hover {
     opacity: 0.7;
 }
-
-.carts__item__text_mb {
-    margin-bottom: 21px;
-}
-
 .visa {
     margin: 0 11px;
 }
@@ -1434,6 +1419,10 @@ header__link-item {
     font-size: 16px;
 }
 
+.customer-list-link:visited {
+    color: #1f1f1f;
+}
+
 .customer-list-link:hover {
     opacity: 0.7;
 }
@@ -1448,6 +1437,10 @@ header__link-item {
     color: #1f1f1f;
     font-weight: 700;
     margin-bottom: 8px;
+}
+
+.customer__number:visited {
+    color: #1f1f1f;
 }
 
 .customer__number:hover {
@@ -1491,6 +1484,10 @@ header__link-item {
     background: #ebf2ff;
     color: #2264d1;
     font-weight: 700;
+}
+
+.customer__track:visited {
+    color: #2264d1;
 }
 
 .customer__track:hover {
@@ -1557,4 +1554,8 @@ header__link-item {
 
 .price-dec-mb {
     margin-top: -8px;
+}
+
+.item-height {
+    height: 73%;
 }
