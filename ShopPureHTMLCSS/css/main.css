@@ -646,7 +646,8 @@ a:visited {
 }
 
 .sub-main__img {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
+    height: 44px;
 }
 
 .footer {
@@ -902,6 +903,11 @@ a:visited {
     cursor: pointer;
     margin-bottom: 13px;
     padding-left: 23px;
+}
+
+.filters-all-categories__wrapper::before {
+    content: '';
+    background: ;
 }
 
 .filters-all-categories__wrapper:hover {
