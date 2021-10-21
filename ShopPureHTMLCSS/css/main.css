@@ -780,10 +780,6 @@ a:visited {
     width: 176px;
 }
 
-.email-input:focus {
-    outline: 1px solid #2264d1;
-}
-
 .email-wrapper {
     margin-right: 12px;
     cursor: pointer;
@@ -824,7 +820,7 @@ a:visited {
     display: flex;
     align-items: center;
     padding: 13px 0 13px 592px;
-    background: #fff;
+    background: #f7f7fa;
 }
 
 .subfooter__ul {
@@ -1203,7 +1199,7 @@ a:visited {
 
 .header__search__loop {
     position: absolute;
-    top: 13px;
+    top: 15px;
     left: 31px;
     z-index: 2;
     cursor: pointer;
@@ -1217,17 +1213,16 @@ a:visited {
     border: 0;
     position: relative;
     padding: 12px 0 12px 44px;
-}
-
-.header__search::placeholder {
+    font-weight: 400;
     font-size: 20px;
+    letter-spacing: 0.0075em;
     color: #19191d;
 }
 
 .header__search__close {
     position: absolute;
     right: 32px;
-    top: 12px;
+    top: 14px;
     cursor: pointer;
 }
 
@@ -1392,10 +1387,12 @@ a:visited {
 }
 .visa {
     margin: 0 11px;
+    max-width: 50px;
 }
 
 .master {
     margin: 0 11px;
+    max-width: 33px;
 }
 
 .footer__customer-business-wrapper {
