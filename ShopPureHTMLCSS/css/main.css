@@ -57,6 +57,7 @@ a:visited {
 .header__avatar-wrapper {
     display: inline-block;
     max-height: 40px;
+    margin-right: 10px;
 }
 
 .header__avatar-wrapper:hover {
@@ -82,7 +83,7 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 25px;
+    margin-right: 25px;
 }
 
 .header__parent__logo:hover {
@@ -97,9 +98,9 @@ a:visited {
 
 .header {
     display: flex;
-    padding: 20px 0 16px 0;
+    padding: 20px 12px 16px 16px;
     align-items: center;
-    max-width: 1980px;
+    max-width: 1920px;
     margin: 0 auto 15px auto;
 }
 
@@ -107,7 +108,8 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 63px 0 6px;
+    margin-right: 63px;
+    padding: 0 3px;
 }
 
 .header__list-item {
@@ -116,6 +118,7 @@ a:visited {
 
 .header__link-item {
     color: #5a5b6a;
+    padding: 0 3px;
 }
 
 .header__link-font {
@@ -147,7 +150,8 @@ a:visited {
 }
 
 .header__link_wrapper {
-    margin: 0 39px 0 3px;
+    margin-right: 39px;
+    padding: 0 3px;
 }
 
 .header__link:hover {
@@ -160,7 +164,7 @@ a:visited {
     border-radius: 4px;
     border: 1px solid #9dc2ff;
     font-size: 20px;
-    margin-right: 21px;
+    margin-right: 9px;
     white-space: nowrap;
     color: #2264d1;
     font-family: Quicksand, sans-serif;
@@ -343,7 +347,7 @@ a:visited {
     color: #5a5b6a;
     cursor: pointer;
     font-size: 14px;
-
+    font-weight: 400;
     padding-top: 8.5px;
     padding-bottom: 8.5px;
 }
@@ -380,7 +384,7 @@ a:visited {
 .related {
     display: flex;
     align-items: center;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
 }
 
 .related__text {
@@ -427,13 +431,13 @@ a:visited {
     padding: 7px 16px 12px 16px;
     border-radius: 8px;
     width: 259px;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     height: 472px;
 }
 
 .carts__item-img {
     max-width: 227px;
+    min-height: 237px;
 }
 
 .carts__item:hover {
@@ -445,7 +449,6 @@ a:visited {
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
-    margin: 0;
     height: 18%;
 }
 
@@ -453,7 +456,6 @@ a:visited {
 }
 
 .carts__item_wrapper {
-    margin-bottom: 15px;
     display: inline-block;
 }
 
@@ -461,7 +463,7 @@ a:visited {
     font-size: 24px;
     font-weight: 700;
     margin: 0;
-    height: 11%;
+    height: 10%;
 }
 
 .carts__item__subtext {
@@ -470,6 +472,7 @@ a:visited {
     margin: 0;
     font-size: 14px;
     height: 10%;
+    display: inline-block;
 }
 
 .stars {
@@ -516,6 +519,7 @@ a:visited {
 .star__number {
     color: #5e6366;
     font-family: Roboto, sans-serif;
+    font-size: 14px;
 }
 
 .watch__wrapper {
@@ -548,11 +552,10 @@ a:visited {
 }
 
 .carts__item-price-and-50off {
-    height: 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 11%;
+    height: 10%;
 }
 
 .carts__item__subtext__marginSecond {
@@ -566,10 +569,6 @@ a:visited {
 
 .carts__item__price__marginSecond {
     margin-bottom: 58px;
-}
-
-.carts__item-padding {
-    padding-top: 21px;
 }
 
 .carts__item__subtext__width {
@@ -616,7 +615,7 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 .sub-main__cart {
@@ -645,7 +644,7 @@ a:visited {
 }
 
 .sub-main__img {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -662,6 +661,7 @@ a:visited {
     font-weight: 700;
     font-size: 16px;
     color: #b1b1c3;
+    margin-right: 55px;
 }
 
 .all-categories__open-wrapper {
@@ -774,13 +774,20 @@ a:visited {
     font-size: 14px;
     font-weight: 400;
     padding-left: 16px;
+    width: 176px;
+}
+
+.email-input:focus {
+    outline: 1px solid #2264d1;
 }
 
 .email-wrapper {
     margin-right: 12px;
+    cursor: pointer;
 }
 
 .subscribe {
+    font-size: 14px;
     width: 120px;
     height: 40px;
     color: #2264d1;
@@ -789,7 +796,7 @@ a:visited {
     border-radius: 4px;
     font-family: Roboto, sans-serif;
     font-weight: 700;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .subscribe:hover {
@@ -813,7 +820,7 @@ a:visited {
 .subfooter {
     display: flex;
     align-items: center;
-    padding: 10px 0 10px 592px;
+    padding: 13px 0 13px 592px;
 }
 
 .subfooter__ul {
@@ -847,7 +854,7 @@ a:visited {
 
 .main-filters__wrapper {
     display: flex;
-    margin: 0 auto 42px auto;
+    margin: 0 auto 26px auto;
     justify-content: space-between;
 }
 
@@ -856,7 +863,7 @@ a:visited {
     font-weight: 700;
     font-size: 24px;
     color: #2264d1;
-    border-radius: 4px;
+    border-radius: 8px;
     border: 1px solid #9dc2ff;
     padding: 12px 0 12px 38px;
     text-align: center;
@@ -1149,6 +1156,11 @@ a:visited {
     box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24),
         0px 2px 4px rgba(90, 91, 106, 0.24);
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter_color:hover {
+    opacity: 0.7;
 }
 
 .select-third {
@@ -1171,6 +1183,10 @@ a:visited {
     justify-content: space-between;
     cursor: pointer;
     margin-bottom: 24px;
+}
+
+.select-third_item_flex:hover {
+    opacity: 0.7;
 }
 
 .header__search__wrapper {
@@ -1383,10 +1399,6 @@ a:visited {
     padding-left: 590px;
 }
 
-.footer__customer {
-    font-family: 'Inter', sans-serif;
-}
-
 .footer__customer-header {
     font-weight: 700;
     margin-bottom: 23px;
@@ -1479,11 +1491,12 @@ a:visited {
 
 .customer__track {
     padding: 11px 23px;
-    margin: 0 12px;
+    margin: 0 20px;
     background: #ebf2ff;
     color: #2264d1;
     font-weight: 700;
     border-radius: 4px;
+    font-size: 14px;
 }
 
 .customer__track:visited {
@@ -1517,7 +1530,7 @@ a:visited {
 }
 
 .footer__business {
-    margin: 0 64px;
+    padding: 0 10px;
 }
 
 .footer__business-header {
@@ -1525,7 +1538,7 @@ a:visited {
     font-weight: 700;
     letter-spacing: 0.0275em;
     text-transform: uppercase;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
 }
 
 .business__subheader {
@@ -1552,10 +1565,6 @@ a:visited {
     margin-bottom: 20px;
 }
 
-.price-dec-mb {
-    margin-top: -8px;
-}
-
 .item-height {
     height: 73%;
 }
@@ -1572,4 +1581,28 @@ a:visited {
 
 .all-categories-margin {
     margin-left: 7px;
+}
+
+.main__span-show {
+    font-weight: 400;
+}
+
+.main__li__show_active .main__span-show {
+    font-weight: 500;
+}
+
+.all-weight {
+    font-weight: 400;
+}
+
+.carts_height {
+    height: 10.4%;
+}
+
+.filter_pointer {
+    cursor: pointer;
+}
+
+.filter_pointer:hover {
+    opacity: 0.7;
 }
