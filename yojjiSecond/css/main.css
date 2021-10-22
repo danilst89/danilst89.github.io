@@ -8,8 +8,12 @@ html {
     overflow-x: hidden;
 }
 
+:root {
+    --primary-color: #22343d;
+}
+
 * {
-    color: #22343d;
+    color: var(--primary-color);
     transition: 0.2s all;
     margin: 0;
     padding: 0;
@@ -47,7 +51,11 @@ html {
     opacity: 0.8;
 }
 
-.header__avatar-wrapper:hover {
+.header__avatar {
+    max-height: 32px;
+}
+
+.header__avatar:hover {
     opacity: 0.8;
 }
 
@@ -77,7 +85,7 @@ html {
     align-items: center;
 }
 
-.header__buttons-avatar {
+.header__buttons {
     display: flex;
     align-items: center;
 }
@@ -190,7 +198,7 @@ html {
     color: #02897a;
 }
 
-.watch__video-icon {
+.watch__icon {
     margin-right: 9px;
 }
 
@@ -263,7 +271,7 @@ html {
     opacity: 0.8;
 }
 
-.advantage__sign-wrapper {
+.advantage__btn {
     text-align: center;
 }
 
@@ -296,13 +304,13 @@ html {
     margin: 0 auto 156px auto;
 }
 
-.management__item-1 {
+.management__manage {
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;
 }
 
-.management__item-2 {
+.management__support {
     display: flex;
     margin-bottom: 124px;
 }
@@ -338,13 +346,13 @@ html {
     margin-bottom: 12px;
 }
 
-.section-text {
+.section__text {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
 }
 
-.plus-text {
+.plus__text {
     font-weight: 400;
 }
 
@@ -356,7 +364,7 @@ html {
     padding-top: 20px;
 }
 
-.management__img-wrapper_extra-margin {
+.management__picture_extra-margin {
     margin-right: 78px;
 }
 
@@ -364,22 +372,26 @@ html {
     padding: 29px 5px 0 5px;
 }
 
-.management__item-3 {
+.management__support {
     display: flex;
     justify-content: space-between;
 }
 
-.plus-item {
+.management__collaborative {
+    display: flex;
+}
+
+.plus__item {
     display: flex;
     align-items: center;
     margin-bottom: 38px;
 }
 
-.plus-icon {
+.plus__icon {
     margin-right: 30px;
 }
 
-.plus-item:last-of-type {
+.plus__item:last-of-type {
     margin-bottom: 0;
 }
 
@@ -399,21 +411,13 @@ html {
     margin-bottom: 35px;
 }
 
-.easy__with-bg {
+.easy__bg {
     text-align: center;
     position: relative;
     padding-top: 52px;
     background: url(/img/Bgbg2.png);
     background-repeat: no-repeat;
     background-position: center top;
-}
-
-.easy__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    width: 100%;
 }
 
 .easy__comments {
@@ -957,6 +961,8 @@ html {
 .phone__data {
     padding: 10px 100px 10px 15px;
     max-width: 320px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
 }
 
 .phone__subinput {
@@ -995,6 +1001,7 @@ html {
 
 .subfooter {
     text-align: center;
+    padding-bottom: 45px;
 }
 
 .subfooter__text {
@@ -1035,11 +1042,11 @@ html {
         margin-bottom: 40px;
     }
 
-    .management__img-wrapper_extra-margin {
+    .management__picture_extra-margin {
         margin-right: 0;
     }
 
-    .management__img-wrapper {
+    .management__picture {
         width: 50%;
     }
 
@@ -1064,7 +1071,7 @@ html {
         align-items: center;
     }
 
-    .advantage__sign-wrapper {
+    .advantage__btn {
         margin-bottom: 50px;
     }
 
@@ -1096,10 +1103,6 @@ html {
 
     .easy__comments {
         padding: 0;
-    }
-
-    .management__text_padding {
-        align-items: center;
     }
 
     .main {
@@ -1160,6 +1163,26 @@ html {
 }
 
 @media (max-width: 768px) {
+    .main__svg {
+        max-width: 460px;
+    }
+
+    .message {
+        border: 0;
+    }
+
+    .main__img {
+        text-align: center;
+    }
+
+    .content__subheader {
+        text-align: center;
+    }
+
+    .content__header {
+        text-align: center;
+    }
+
     .preview {
         width: 100%;
     }
@@ -1201,7 +1224,7 @@ html {
         flex-direction: column;
     }
 
-    .management__img-wrapper {
+    .management__picture {
         width: 100%;
         max-width: 500px;
     }
@@ -1216,19 +1239,18 @@ html {
         min-height: 308px;
     }
 
-    .management__item-1 {
+    .management__manage {
         flex-flow: column-reverse;
         align-items: center;
     }
 
-    .management__item-2 {
+    .management__collaborative {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+    .management__support {
         flex-flow: column;
-        align-items: center;
-    }
-
-    .management__item-3 {
-        flex-flow: column-reverse;
-        align-items: center;
     }
 
     .footer__phone {
@@ -1238,10 +1260,6 @@ html {
 
     .header {
         margin-bottom: 20px;
-    }
-
-    .management__text {
-        text-align: center;
     }
 
     .footer__resource {
@@ -1264,7 +1282,7 @@ html {
         align-items: center;
     }
 
-    .advantage__sign-wrapper {
+    .advantage__btn {
         margin-bottom: 20px;
     }
 
@@ -1272,11 +1290,11 @@ html {
         padding-top: 20px;
     }
 
-    .management__item-1 {
+    .management__manage {
         margin-bottom: 30px;
     }
 
-    .management__item-2 {
+    .management__support {
         margin-bottom: 30px;
     }
 
@@ -1375,7 +1393,7 @@ html {
 
     .management__text {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
     }
 
     .content__card {
