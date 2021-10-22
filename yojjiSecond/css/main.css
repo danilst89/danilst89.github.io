@@ -1163,6 +1163,14 @@ html {
 }
 
 @media (max-width: 768px) {
+    .management__picture {
+        margin: 0 auto;
+    }
+
+    .content__points {
+        display: none;
+    }
+
     .main__svg {
         max-width: 460px;
     }
