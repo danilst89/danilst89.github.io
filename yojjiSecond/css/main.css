@@ -1017,7 +1017,7 @@ html {
     margin-right: 16px;
 }
 
-.strategy:hover .strategy__header {
+.strategy_active .strategy__header {
     color: #02897a;
 }
 
@@ -1076,17 +1076,7 @@ html {
     }
 
     .management {
-        padding: 0 5px;
-    }
-
-    .easy__comment-wrapper1 {
-        flex-direction: column;
-    }
-
-    .easy__comment-wrapper-2 {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+        padding: 0 25px;
     }
 
     .footer__preview {
@@ -1145,10 +1135,6 @@ html {
         margin-bottom: 15px;
     }
 
-    .header {
-        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
-    }
-
     .preview {
         width: 25%;
     }
@@ -1163,6 +1149,44 @@ html {
 }
 
 @media (max-width: 768px) {
+    .easy__comment-wrapper1 {
+        flex-direction: column;
+    }
+
+    .easy__comment-wrapper-2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .advantage__subheadline {
+        text-align: center;
+    }
+
+    .easy__comments {
+        padding: 0 20px;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+
+    .price__cards {
+        padding: 0 14px;
+    }
+
+    .easy__text-right::before {
+        display: none;
+    }
+
+    .easy__text::before {
+        display: none;
+    }
+
+    .header {
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+    }
+
     .management__picture {
         margin: 0 auto;
     }
@@ -1239,7 +1263,7 @@ html {
 
     .price__card {
         width: 100%;
-        padding: 24px 76px 28px 73px;
+        padding: 24px 50px 28px 50px;
     }
 
     .content__card {
@@ -1288,10 +1312,6 @@ html {
 
     .phone__message {
         align-items: center;
-    }
-
-    .advantage__btn {
-        margin-bottom: 20px;
     }
 
     .main__text {
