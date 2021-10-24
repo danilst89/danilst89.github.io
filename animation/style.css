@@ -1,0 +1,438 @@
+body {
+    width: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+    max-width: 150px;
+    background-color: aqua;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin: 0 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.card__img-wrapper {
+    margin-bottom: 20px;
+}
+
+.card__head {
+    font-size: 44px;
+}
+
+.card__img {
+    max-width: 128px;
+}
+
+.card__descr {
+    font-size: 24px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+}
+
+/* .card:nth-child(3) {
+    margin-top: 35px;
+    animation: anom2 3s ease-out infinite;
+}
+
+.card:nth-child(2) {
+    position: absolute;
+    animation: anom 3s ease-out infinite;
+}
+
+@keyframes anom {
+    50% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes anom2 {
+    50% {
+        margin-top: 0;
+    }
+} */
+
+.card-1 {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    animation: move 20s linear infinite;
+}
+
+.card-2 {
+    position: absolute;
+    left: 170px;
+    transform: translateY(-50%);
+    animation: move2 20s linear infinite;
+}
+
+.card-3 {
+    position: absolute;
+    left: 340px;
+    transform: translateY(-50%);
+    animation: move3 20s linear infinite;
+}
+
+.card-4 {
+    position: absolute;
+    left: 510px;
+    transform: translateY(-50%);
+    animation: move4 20s linear infinite;
+}
+
+.card-5 {
+    position: absolute;
+    left: 680px;
+    transform: translateY(-50%);
+    animation: move5 20s linear infinite;
+}
+
+.card-6 {
+    position: absolute;
+    left: 850px;
+    transform: translateY(-50%);
+    animation: move6 20s linear infinite;
+}
+
+.card-7 {
+    position: absolute;
+    left: 1020px;
+    transform: translateY(-50%);
+    animation: move7 20s linear infinite;
+}
+
+.cards:hover > .card-1,
+.cards:hover > .card-2,
+.cards:hover > .card-3,
+.cards:hover > .card-4,
+.cards:hover > .card-5,
+.cards:hover > .card-6,
+.cards:hover > .card-7 {
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+        transform: scale(30%);
+    }
+
+    15% {
+        left: 170px;
+        transform: scale(50%);
+    }
+
+    30% {
+        left: 340px;
+        transform: scale(70%);
+    }
+
+    45% {
+        left: 510px;
+        transform: scale(100%);
+    }
+
+    60% {
+        left: 680px;
+        transform: scale(70%);
+    }
+
+    75% {
+        left: 850px;
+        transform: scale(50%);
+        z-index: 2;
+    }
+
+    90% {
+        left: 1020px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    to {
+        left: 0px;
+        transform: scale(30%);
+    }
+}
+
+@keyframes move2 {
+    from {
+        left: 170px;
+        transform: scale(50%);
+    }
+
+    15% {
+        left: 340px;
+        transform: scale(70%);
+    }
+
+    30% {
+        left: 510px;
+        transform: scale(100%);
+    }
+
+    45% {
+        left: 680px;
+        transform: scale(70%);
+    }
+
+    60% {
+        left: 850px;
+        transform: scale(50%);
+        z-index: 2;
+    }
+
+    75% {
+        left: 1020px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    90% {
+        left: 0px;
+        transform: scale(30%);
+    }
+
+    to {
+        left: 170px;
+        transform: scale(50%);
+    }
+}
+
+@keyframes move3 {
+    from {
+        left: 340px;
+        transform: scale(70%);
+    }
+
+    15% {
+        left: 510px;
+        transform: scale(100%);
+    }
+
+    30% {
+        left: 680px;
+        transform: scale(70%);
+    }
+
+    45% {
+        left: 850px;
+        transform: scale(50%);
+        z-index: 2;
+    }
+
+    60% {
+        left: 1020px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    75% {
+        left: 0px;
+        transform: scale(30%);
+    }
+
+    90% {
+        left: 170px;
+        transform: scale(50%);
+    }
+
+    to {
+        left: 340px;
+        transform: scale(70%);
+    }
+}
+
+@keyframes move4 {
+    from {
+        left: 510px;
+        transform: scale(100%);
+    }
+
+    15% {
+        left: 680px;
+        transform: scale(70%);
+    }
+
+    30% {
+        left: 850px;
+        transform: scale(50%);
+        z-index: 2;
+    }
+
+    45% {
+        left: 1020px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    60% {
+        left: 0px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    75% {
+        left: 170px;
+        transform: scale(50%);
+    }
+
+    90% {
+        left: 340px;
+        transform: scale(70%);
+    }
+
+    to {
+        left: 510px;
+        transform: scale(100%);
+    }
+}
+
+@keyframes move5 {
+    from {
+        left: 680px;
+        transform: scale(70%);
+    }
+
+    15% {
+        left: 850px;
+        transform: scale(50%);
+    }
+
+    30% {
+        left: 1020px;
+        transform: scale(30%);
+    }
+
+    45% {
+        left: 0px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    60% {
+        left: 170px;
+        transform: scale(50%);
+    }
+
+    75% {
+        left: 340px;
+        transform: scale(70%);
+    }
+
+    90% {
+        left: 510px;
+        transform: scale(100%);
+    }
+
+    to {
+        left: 680px;
+        transform: scale(70%);
+    }
+}
+
+@keyframes move6 {
+    from {
+        left: 850px;
+        transform: scale(50%);
+    }
+
+    15% {
+        left: 1020px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    30% {
+        left: 0px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    45% {
+        left: 170px;
+        transform: scale(50%);
+        z-index: -2;
+    }
+
+    60% {
+        left: 340px;
+        transform: scale(70%);
+    }
+
+    75% {
+        left: 510px;
+        transform: scale(100%);
+    }
+
+    90% {
+        left: 680px;
+        transform: scale(70%);
+    }
+
+    to {
+        left: 850px;
+        transform: scale(50%);
+    }
+}
+
+@keyframes move7 {
+    from {
+        left: 1020px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    15% {
+        left: 0px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    30% {
+        left: 170px;
+        transform: scale(50%);
+        z-index: 2;
+    }
+
+    45% {
+        left: 340px;
+        transform: scale(70%);
+    }
+
+    60% {
+        left: 510px;
+        transform: scale(100%);
+    }
+
+    75% {
+        left: 680px;
+        transform: scale(70%);
+    }
+
+    90% {
+        left: 850px;
+        transform: scale(50%);
+    }
+
+    to {
+        left: 1020px;
+        transform: scale(30%);
+    }
+}

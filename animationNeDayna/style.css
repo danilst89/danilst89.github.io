@@ -1,0 +1,190 @@
+body {
+    width: 1440px;
+    max-width: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+    max-width: 150px;
+    background-color: aqua;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin: 0 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.card__img-wrapper {
+    margin-bottom: 20px;
+}
+
+.card__head {
+    font-size: 44px;
+}
+
+.card__img {
+    max-width: 128px;
+}
+
+.card__descr {
+    font-size: 24px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    padding-top: 300px;
+}
+
+.cards:hover > .card-1,
+.cards:hover > .card-2,
+.cards:hover > .card-3,
+.cards:hover > .card-4,
+.cards:hover > .card-5,
+.cards:hover > .card-6,
+.cards:hover > .card-7 {
+    animation-play-state: paused;
+}
+
+/* .card:nth-child(3) {
+    margin-top: 35px;
+    animation: anom2 3s ease-out infinite;
+}
+
+.card:nth-child(2) {
+    position: absolute;
+    animation: anom 3s ease-out infinite;
+}
+
+@keyframes anom {
+    50% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes anom2 {
+    50% {
+        margin-top: 0;
+    }
+} */
+
+.card-1 {
+    position: absolute;
+    left: 0;
+    animation: move 20s linear infinite;
+    animation-delay: 0;
+}
+
+.card-2 {
+    position: absolute;
+    left: 0;
+    animation: move 20s linear infinite;
+    animation-delay: 2.86s;
+}
+
+.card-3 {
+    position: absolute;
+    left: 0;
+    animation: move 20s linear infinite;
+    animation-delay: 5.72s;
+}
+
+.card-4 {
+    position: absolute;
+    left: 0;
+    animation: move 20s linear infinite;
+    animation-delay: 8.58s;
+}
+
+.card-5 {
+    position: absolute;
+    left: 0;
+    animation: move 20s linear infinite;
+    animation-delay: 11.44s;
+}
+
+.card-6 {
+    position: absolute;
+    left: 0;
+    animation: move 20s linear infinite;
+    animation-delay: 14.3s;
+}
+
+.card-7 {
+    position: absolute;
+    left: 0;
+    animation: move 20s linear infinite;
+    animation-delay: 17.16s;
+}
+/* 
+.cards:hover > .card-1,
+.cards:hover > .card-2,
+.cards:hover > .card-3,
+.cards:hover > .card-4,
+.cards:hover > .card-5,
+.cards:hover > .card-6,
+.cards:hover > .card-7 {
+    animation-play-state: paused;
+} */
+
+@keyframes move {
+    from {
+        left: 0;
+        transform: scale(30%);
+        z-index: -2;
+    }
+
+    15% {
+        left: 170px;
+        transform: scale(50%);
+        z-index: 2;
+    }
+
+    30% {
+        left: 340px;
+        transform: scale(70%);
+        z-index: 2;
+    }
+
+    45% {
+        left: 510px;
+        transform: scale(100%);
+        z-index: 2;
+    }
+
+    60% {
+        left: 680px;
+        transform: scale(70%);
+        z-index: 2;
+    }
+
+    75% {
+        left: 850px;
+        transform: scale(50%);
+        z-index: 2;
+    }
+
+    90% {
+        left: 1020px;
+        transform: scale(30%);
+        z-index: 2;
+    }
+
+    to {
+        left: 0px;
+        transform: scale(30%);
+        z-index: -2;
+    }
+}
