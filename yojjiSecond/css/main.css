@@ -43,6 +43,14 @@ html {
     padding: 20px 10px;
 }
 
+.burger__items {
+    display: none;
+}
+
+.burger__close {
+    display: none;
+}
+
 .header__symbol {
     display: flex;
 }
@@ -90,12 +98,12 @@ html {
     align-items: center;
 }
 
-.header__burger {
+.burger__lines {
     display: none; /* flex */
     flex-direction: column;
 }
 
-.header__line {
+.burger__line {
     margin-bottom: 3px;
     max-height: 4px;
 }
@@ -154,7 +162,7 @@ html {
     font-weight: bold;
     font-size: 40px;
     line-height: 60px;
-
+    max-width: 402px;
     margin-bottom: 18px;
 }
 
@@ -164,6 +172,7 @@ html {
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 60px;
+    max-width: 458px;
 }
 
 .watch__link {
@@ -220,7 +229,8 @@ html {
 .advantage__header {
     font-weight: 700;
     font-size: 32px;
-
+    max-width: 539px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -239,6 +249,7 @@ html {
     line-height: 26px;
     height: 78px;
     font-weight: 400;
+    max-width: 240px;
 }
 
 .advantage__list {
@@ -252,7 +263,7 @@ html {
 }
 
 .advantage__item {
-    min-width: 240px;
+    min-width: 214px;
     margin: 0 22px;
     max-height: 204px;
 }
@@ -277,7 +288,7 @@ html {
 
 .advantage__bg {
     margin-bottom: 71px;
-} 
+}
 
 .advantage__without-bg {
     position: relative;
@@ -337,6 +348,7 @@ html {
     line-height: 26px;
     margin-bottom: 32px;
     font-weight: 400;
+    max-width: 486px;
 }
 
 .section__header {
@@ -350,10 +362,12 @@ html {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
+    max-width: 486px;
 }
 
 .plus__text {
     font-weight: 400;
+    max-width: 385px;
 }
 
 .management__section:first-of-type {
@@ -370,6 +384,7 @@ html {
 
 .management__text_padding {
     padding: 29px 5px 0 5px;
+    max-width: 530px;
 }
 
 .management__support {
@@ -409,6 +424,8 @@ html {
 .easy__subheader {
     font-size: 16px;
     margin-bottom: 35px;
+    max-width: 542px;
+    margin: 0 auto;
 }
 
 .easy__bg {
@@ -483,17 +500,6 @@ html {
 
 .easy__descr-right {
     position: relative;
-}
-
-.easy__descr-right::before {
-    content: '';
-    position: absolute;
-    background-color: #fff;
-    border-radius: 50%;
-    height: 9px;
-    width: 9px;
-    top: 61px;
-    right: 22px;
 }
 
 .easy__descr {
@@ -581,6 +587,10 @@ html {
     margin-bottom: 33px;
 }
 
+.strategy:hover {
+    opacity: 0.8;
+}
+
 .strategy__picture {
     max-width: 100%;
     height: auto;
@@ -605,11 +615,7 @@ html {
 .strategy__header {
     font-weight: 700;
     font-size: 24px;
-}
-
-.strategy__header:hover {
-    color: #02897a;
-    cursor: pointer;
+    max-width: 294px;
 }
 
 .content__cards {
@@ -956,6 +962,7 @@ html {
 
 .phone__subinput {
     font-size: 20px;
+    max-width: 280px;
 }
 
 .phone__data {
@@ -1149,6 +1156,46 @@ html {
 }
 
 @media (max-width: 768px) {
+    .easy__text {
+        box-shadow: none;
+        background: none;
+    }
+
+    .easy__text-right {
+        box-shadow: none;
+        background: none;
+    }
+
+    .main {
+        align-items: center;
+    }
+
+    .burger__items {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+    }
+
+    .burger_active > .burger__items {
+        display: flex;
+    }
+
+    .burger_active > .burger__close {
+        display: block;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
     .easy__note {
         flex-direction: column;
     }
@@ -1235,8 +1282,22 @@ html {
         display: none;
     }
 
-    .header__burger {
+    .burger__lines {
         display: flex;
+    }
+
+    .burger__close {
+        font-size: 34px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        color: #fff;
+        z-index: 9999;
+    }
+
+    .burger__link {
+        color: #fff;
+        font-size: 20px;
     }
 
     .footer {
@@ -1278,7 +1339,6 @@ html {
 
     .management__collaborative {
         flex-flow: column-reverse;
-        align-items: center;
     }
 
     .management__support {
@@ -1304,6 +1364,7 @@ html {
 
     .phone__subinput {
         text-align: center;
+        margin: 0 auto 34px auto;
     }
 
     .footer__message {
@@ -1392,6 +1453,15 @@ html {
 
     .main__header {
         font-size: 40px;
+        max-width: 100%;
+    }
+
+    .content__card {
+        border: 0;
+    }
+
+    .main__subheader {
+        max-width: 100%;
     }
 
     .main__watch {
