@@ -51,6 +51,7 @@ html {
 
 .header__symbol {
     display: flex;
+    margin-right: auto;
 }
 
 .header__symbol:hover {
@@ -84,12 +85,12 @@ html {
 .header__list {
     display: flex;
     align-items: center;
+    padding: 0 4px;
 }
 
 .header__links {
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 
 .header__buttons {
