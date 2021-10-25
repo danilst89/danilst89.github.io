@@ -1041,6 +1041,14 @@ html {
     color: #02897a;
 }
 
+.management__img {
+    max-width: 100%;
+}
+
+.easy__img {
+    max-width: 102px;
+}
+
 
 /* MEDIAS */
 
