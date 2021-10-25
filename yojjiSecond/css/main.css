@@ -36,7 +36,6 @@ html {
 .header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     max-width: 1120px;
     margin: 0 auto 23px auto;
     padding: 20px 10px;
@@ -90,6 +89,7 @@ html {
 .header__links {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .header__buttons {
@@ -130,7 +130,7 @@ html {
     color: #fff;
 }
 
-.header__list-item {
+.list__item {
     margin-right: 25px;
 }
 
@@ -446,6 +446,7 @@ html {
 .easy__comments {
     max-width: 971px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .easy__comment {
@@ -537,7 +538,6 @@ html {
 .easy__say {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
 }
 
 .easy__picture_without-margin {
@@ -1049,7 +1049,7 @@ html {
         margin-bottom: 20px;
         padding: 20px 3px;
     }
-    .header__list-item {
+    .list__item {
         margin-right: 7px;
     }
     .header__sign {
@@ -1174,6 +1174,7 @@ html {
     }
     .header__burger {
         display: block;
+        margin-left: auto;
     }
     .easy__note {
         flex-direction: column;
