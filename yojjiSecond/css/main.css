@@ -17,7 +17,7 @@ html {
 }
 
 * {
-    color: var(--primary-color);
+    color: var(--primary-color, #22343d);
     transition: 0.2s all;
     margin: 0;
     padding: 0;
@@ -113,8 +113,6 @@ html {
 
 .header__sign {
     border: 1px solid #bcd0e5;
-    box-sizing: border-box;
-    border-radius: 4px;
     padding: 10px 22px 9px 25px;
     font-weight: 600;
     margin-right: 23px;
@@ -189,7 +187,6 @@ html {
 .watch__link {
     padding: 15px 41px 14px 41px;
     background: #02897a;
-    border-radius: 4px;
     color: #fff;
     font-weight: 700;
     margin-right: 29px;
@@ -281,7 +278,6 @@ html {
 
 .advantage__sign {
     background: #02897a;
-    border-radius: 4px;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
@@ -564,7 +560,6 @@ html {
     display: inline-block;
     padding: 15px 31px 14px 30px;
     background: #02897a;
-    border-radius: 4px;
     font-weight: 700;
     color: #fff;
     font-size: 16px;
@@ -714,7 +709,7 @@ html {
     background: #02897a;
 }
 
-.price__card:hover .card__button .card-order {
+.price__card:hover .card__button .card__order {
     background-color: #fff;
     color: #02897a;
 }
@@ -786,7 +781,7 @@ html {
     margin-bottom: 0;
 }
 
-.card-order {
+.card__order {
     padding: 11px 19px 11px 18px;
     background: #02897a;
     border-radius: 8px;
@@ -798,7 +793,7 @@ html {
     display: inline-block;
 }
 
-.card-order:hover {
+.card__order:hover {
     opacity: 0.8;
 }
 
