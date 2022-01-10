@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(https://www.tobyscs.com/files/csgo-how-to-rename-bomb-guide.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .wrapper {
+        position: absolute;
+        left: 700px;
+        padding-top: 190px;
+        display: flex;
+        justify-content: center;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+      .modal {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+
+      .token {
+        display: none;
+        width: 200px;
+        height: 300px;
+        background-color: #fff;
+        border-radius: 10px;
+        word-wrap: break-word;
+        color: #000;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+</head>
+<div class="wrapper">
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+</div>
+<div class='modal'>
+  <div class="token"></div>
+</div>
+<body>
+    <script>
+  const render = () => {
+    const circles = document.querySelectorAll('.circle');
+    levers.forEach((lever, index) => {
+      circles[index].style.backgroundColor = lever ? '#000' : '#fff';
+    });
+  }
+  const webSocket = new WebSocket('ws://vps.yojji.io', 'danil_stolbov');
+
+  let levers = [false, false, false, false];
+
+  webSocket.onopen = () => console.log('Connected');
+  webSocket.onclose = () => console.log('Disconnected');
+
+  webSocket.onmessage = function(event) {
+    const data = JSON.parse(event.data);
+
+    if (data.token) {
+      console.log(data.token);
+      webSocket.close();
+      document.body.style.background = 'url(https://www.ready.gov/sites/default/files/2019-09/hero_nuclear_blast.jpg)';
+      document.querySelector('.wrapper').style.display = 'none';
+      document.querySelector('.token').style.display = 'block';
+      document.querySelector('.token').innerHTML = data.token;
+      return
+    };
+
+    if (data.newState) {
+      levers = levers.map(lever => !lever);
+    }
+
+    if (levers.every(lever => lever)) {
+      webSocket.send(JSON.stringify({action: "powerOff", stateId: data.stateId}));
+    }
+
+    if ('pulled' in data) {
+      console.log('lev',levers);
+      levers[data.pulled] = !levers[data.pulled];
+      webSocket.send(JSON.stringify({action: "check", "lever1": 0, "lever2": data.pulled, stateId: data.stateId}));
+    }
+
+    if ("action" in data) {
+      if (data.same) {
+        levers[data.lever2] = levers[0];
+      } else {
+        levers[data.lever2] = !levers[0];
+      }
+    }
+    
+    render();
+  };
+    </script>
+</body>
+</html>
